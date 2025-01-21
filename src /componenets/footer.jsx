@@ -47,7 +47,7 @@ export default function Footer() {
 
       // Go to contact sheet
       const emailLink = document.createElement('a');
-      emailLink.href = '';
+      emailLink.href = 'https://678ff131fdca660008ef2974--daniellewoessner.netlify.app/contact';
       emailLink.target ='_blank';
       emailLink.textContent = 'Get in Touch';
       emailLink.rel = 'noopener noreferrer'
