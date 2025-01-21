@@ -1,95 +1,134 @@
-main {
-    color:#000000
-}
-div {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    
+/* Mobile-First Responsive CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-head {
-    color:#BFB1C1;
+:root {
+    /* Color Palette */
+    --bg-color: #B5CBB7;
+    --section-bg: #D2E4C4;
+    --text-color: #000000;
+    --accent-color: #BFB1C1;
 }
 
-shawdowhostcompanion {
-    background-color: #871010;
-}
-aside {
-    background-color:#000000
-}
 body {
-    background-color:#B5CBB7 ;
+    background-color: var(--bg-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: bold;
-    font-weight: 200px;
-    padding-bottom: 75px;
-    
-    
-   
+    font-weight: 400; /* Corrected font-weight */
+    line-height: 1.6;
+    padding: 15px;
+    color: var(--text-color);
 }
 
-section {
-    background-color:#D2E4C4;
-    padding-top: 15px;
-}
-h1 {
-    text-align: center;
-    margin: 35px 0 20px 0 !important;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-
-p {
-    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   box-shadow: #f6d0d0;
-   background-color:E9EDC9;
-   border: #000000;
-   border-radius: 15px;
-   column-width: auto;
-   font-size: large;
-   font-weight: 200px;
-  
-   
-
+/* Mobile-first responsive typography */
+html {
+    font-size: 16px; /* Base font size for mobile */
 }
 
-a {
-    padding: 40px;
-    padding-bottom: 40px;
-    padding-left: px;
-    
-}
-
+/* Responsive headings */
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-    box-decoration-break: slice;
-    padding-top: 10px;
-}
-
-  footer {
-    padding:20px;
-  }
-  b {
-   padding-left: 1200px;
-
-  }
-
-aside {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: bold;
-    font-size: large;
     text-align: center;
-    align-items: left;
-    padding-right: 1100px;
-    columns: 1;
-    padding-bottom: px;
-
+    margin: 20px 0;
+    font-size: 1.8rem; /* Responsive font size */
 }
 
-   
+/* Responsive sections */
+section {
+    background-color: var(--section-bg);
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
 
-flexgrow {
-    background-color: gainsboro;
+/* Improved paragraph styles */
+p {
+    font-family: inherit;
+    background-color: #E9EDC9;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive links */
+a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Aside styles with mobile-first approach */
+aside {
+    background-color: #000000;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px; /* Slightly larger font on tablet */
+    }
+
+    body {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 20px; /* Larger font on desktop */
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+
+/* Flexbox helper classes */
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stacked by default on mobile */
+}
+
+@media screen and (min-width: 768px) {
+    .flex-container {
+        flex-direction: row; /* Switch to row on larger screens */
+        gap: 15px;
+    }
 }
