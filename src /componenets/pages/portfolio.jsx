@@ -4,31 +4,31 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Weather Dashboard",
-      image: "public/Weatherdashboardpic.png",
+      image: "/Weatherdashboardpic.png",
       link: "https://daniellewoessner.github.io/Weatherdashboard2",
       alt: "Weather Dashboard"
     },
     {
       title: "README Generator",
-      image: "public/Read me generator.png",
+      image: "/Read me generator.png",
       link: "https://github.com/Daniellewoessner/READMEGENERATOR",
       alt: "Read Me Generator"
     },
     {
       title: "Weather AI",
-      image: "public/WEATHERAI (2).png",
+      image: "/WEATHERAI (2).png",
       link: "https://weatherai-ucpm.onrender.com/",
       alt: "Weather AI generator"
     },
     {
       title: "Vehicle Builder",
-      image: "public/vehiclebuilder.png",
+      image: "/vehiclebuilder.png",
       link: "https://github.com/Daniellewoessner/Vehicle-Builder",
       alt: "Vehicle Builder application"
     },
     {
       title: "Employee Tracker",
-      image: "public/employee database.png",
+      image: "/employee database.png",
       link: "https://github.com/Daniellewoessner/Employee-Tracker",
       alt: "Employee Database Tracker"
     }
