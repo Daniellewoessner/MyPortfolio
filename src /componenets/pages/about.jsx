@@ -13,14 +13,14 @@ export default function About() {
             {/* Glow effect behind image */}
             <div className="absolute inset-0 bg-[#b592a0] rounded-full blur-lg opacity-20"></div>
             <img
-              src="public/aboutme.jpeg"
+              src="/aboutme.jpeg"
               alt="Danielle Woessner"
               className="relative w-20 h-20 md:w-5 md:h-5 rounded-full object-cover shadow-xl border-4 border-white mx-auto"
               
               />
               <c>
               <img
-               src={ "/Add a heading (2).png"}
+               src={ "/Add a heading.png"}
               alt="Danielle Woessner"
               className="relative w-20 h-20 md:w-5 md:h-5 rounded-full object-cover shadow-xl border-4 border-white mx-auto"
               
