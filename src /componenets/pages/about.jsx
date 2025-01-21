@@ -20,7 +20,7 @@ export default function About() {
               />
               <c>
               <img
-               src={import.meta.env.BASE_URL + "/Add a heading.png"}
+               src={ "/Add a heading (2).png"}
               alt="Danielle Woessner"
               className="relative w-20 h-20 md:w-5 md:h-5 rounded-full object-cover shadow-xl border-4 border-white mx-auto"
               
