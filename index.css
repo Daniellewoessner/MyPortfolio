@@ -1,0 +1,95 @@
+main {
+    color:#000000
+}
+div {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+
+
+head {
+    color:#BFB1C1;
+}
+
+shawdowhostcompanion {
+    background-color: #871010;
+}
+aside {
+    background-color:#000000
+}
+body {
+    background-color:#B5CBB7 ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+    font-weight: 200px;
+    padding-bottom: 75px;
+    
+    
+   
+}
+
+section {
+    background-color:#D2E4C4;
+    padding-top: 15px;
+}
+h1 {
+    text-align: center;
+    margin: 35px 0 20px 0 !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+p {
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   box-shadow: #f6d0d0;
+   background-color:E9EDC9;
+   border: #000000;
+   border-radius: 15px;
+   column-width: auto;
+   font-size: large;
+   font-weight: 200px;
+  
+   
+
+}
+
+a {
+    padding: 40px;
+    padding-bottom: 40px;
+    padding-left: px;
+    
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    box-decoration-break: slice;
+    padding-top: 10px;
+}
+
+  footer {
+    padding:20px;
+  }
+  b {
+   padding-left: 1200px;
+
+  }
+
+aside {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+    font-size: large;
+    text-align: center;
+    align-items: left;
+    padding-right: 1100px;
+    columns: 1;
+    padding-bottom: px;
+
+}
+
+   
+
+flexgrow {
+    background-color: gainsboro;
+}
