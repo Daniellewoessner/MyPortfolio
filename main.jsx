@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from './App';
+import App from './app.jsx';
 import Home from './src /componenets/pages/home';
 import About from './src /componenets/pages/about';
 import Portfolio from './src /componenets/pages/portfolio';
