@@ -47,11 +47,11 @@ export default function Footer() {
 
       // Go to contact sheet
       const emailLink = document.createElement('a');
-      emailLink.href = 'src /componenets/pages/contact.jsx';
+      emailLink.href = 'https://daniellewoessner.netlify.app/contact';
       emailLink.target ='_blank';
-      emailLink.textContent = 'Get in Touch';
       emailLink.rel = 'noopener noreferrer'
-      emailLink.style.cssText = linkStyle;
+      emailLink.textContent = 'Get in Touch';
+     emailLink.style.cssText = linkStyle;
 
       // Add hover effect to all links
       const links = [githubLink, emailLink];
