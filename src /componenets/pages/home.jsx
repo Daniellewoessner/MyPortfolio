@@ -61,7 +61,7 @@ export default function Home() {
            <div className="relative">
              <div className="absolute inset-0 bg-[#b592a0] rounded-full blur-lg opacity-20"></div>
              <img
-               src="/profile.jpg"
+               src="/profile.jpeg"
                alt="Danielle Woessner"
                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-xl border-4 border-white mx-auto"
              />
