@@ -31,7 +31,13 @@ export default function Portfolio() {
       image: "/employee database.png",
       link: "https://github.com/Daniellewoessner/Employee-Tracker",
       alt: "Employee Database Tracker"
-    }
+    },
+    {
+    title: "Candidate Search",
+      link:"https://github.com/Daniellewoessner/Canidate",
+      alt: "Canidate Search"
+  }
+  
   ];
 
   return (
