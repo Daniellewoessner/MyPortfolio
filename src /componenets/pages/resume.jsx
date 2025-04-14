@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/resume.css'; // Assuming you have a CSS file for styling
+import '../../styles/Resume.css'; // Assuming you have a CSS file for styling
 
 function Resume() {
   const frontEndSkills = [
