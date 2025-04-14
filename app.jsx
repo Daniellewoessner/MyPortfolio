@@ -11,7 +11,7 @@ import Resume from './src /componenets/pages/resume';
 import Error from './src /componenets/pages/error';
 import Response from './src /componenets/pages/response';
 import ScrollToTop from './src /componenets/ScrollToTop';
-import '../MyPortfolio/src /styles/app.css'; // Adjust the path as necessary
+import './src /styles/app.css'; // Adjust the path as necessary
 
 function App() {
   return (
