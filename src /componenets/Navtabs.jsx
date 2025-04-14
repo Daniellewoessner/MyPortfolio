@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../styles/NavTabs.css'; // Adjust the path as necessary
+import '../../src /styles/Navtabs.css'; // Adjust the path as necessary
 
 function NavTabs() {
   const currentPage = useLocation().pathname;
