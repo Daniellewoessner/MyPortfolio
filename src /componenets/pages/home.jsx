@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SkillsSection from '../../componenets/Skillssection';
-import '../../styles/home.css'; // Adjust the path as necessary
+import '../../styles/Home.css'; // Adjust the path as necessary
 
 function Home() {
   return (
