@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../styles/response.css'; // Adjust the path as necessary
+import '../../styles/Response.css'; // Adjust the path as necessary
 
 function Response() {
   const navigate = useNavigate();
