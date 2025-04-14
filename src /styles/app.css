@@ -1,0 +1,202 @@
+/* File: src/App.css - Updated Color Scheme */
+:root {
+  /* Main Colors */
+  --primary-color: #5271ff; /* Vibrant blue */
+  --secondary-color: #ff914d; /* Warm orange */
+  --accent-color: #6cdfdc; /* Turquoise */
+  
+  /* Text Colors */
+  --text-color: #2a2a3c; /* Dark blue-gray */
+  --light-text: #6a6b7c; /* Medium blue-gray */
+  
+  /* Background Colors */
+  --light-bg: #f8f9fc; /* Very light blue-gray */
+  --dark-bg: #2a2a3c; /* Dark blue-gray */
+  --card-bg: #ffffff; /* White */
+  
+  /* UI Elements */
+  --shadow: 0 10px 30px rgba(82, 113, 255, 0.1);
+  --hover-shadow: 0 20px 40px rgba(82, 113, 255, 0.2);
+  --radius: 10px;
+  --transition: all 0.3s ease;
+  
+  /* Status Colors */
+  --success-color: #5271ff; /* Changed from green to match primary */
+  --info-color: #6cdfdc; /* Matches accent */
+  --warning-color: #ff914d; /* Matches secondary */
+  --error-color: #ff4a6e; /* Red for errors */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding-top: 80px; /* Adjust for fixed navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+  border: none;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 5px 15px rgba(82, 113, 255, 0.4);
+}
+
+.primary-btn:hover {
+  background-color: #3f5df7;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(82, 113, 255, 0.5);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.secondary-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(82, 113, 255, 0.3);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  border-radius: 2px;
+}
+
+/* Overrides to remove any previous colors */
+.text-french-500,
+.text-lapis-500,
+.bg-french-500,
+.bg-lapis-500 {
+  color: var(--primary-color);
+}
+
+.text-french-500:hover,
+.text-lapis-500:hover {
+  color: var(--secondary-color);
+}
+
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, var(--light-bg), white);
+}
+
+/* Remove old colors from any elements */
+[class*="success"],
+[class*="green"] {
+  color: var(--primary-color) !important;
+  background-color: rgba(82, 113, 255, 0.1) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .btn {
+    padding: 12px 25px;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}

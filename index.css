@@ -5,11 +5,11 @@
 }
 
 :root {
-    
-    --bg-color: #B5CBB7;
-    --section-bg: #D2E4C4;
+    --bg-color: #b5bbcb;
+    --section-bg: #c4cee4;
     --text-color: #000000;
     --accent-color: #BFB1C1;
+    --paragraph-bg: #d8dfef; /* Changed from #E9EDC9 (green) to a light blue-gray */
 }
 
 body {
@@ -41,7 +41,7 @@ section {
 
 p {
     font-family: inherit;
-    background-color: #E9EDC9;
+    background-color: var(--paragraph-bg); /* Using the new variable */
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 10px;

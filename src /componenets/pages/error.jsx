@@ -1,8 +1,20 @@
 import React from 'react';
-export default function Error() {
-    return (
-      <div>
-        <h1>Error: Page not found</h1>
+import { Link } from 'react-router-dom';
+import '../../styles/error.css'; // Adjust the path as necessary
+
+function Error() {
+  return (
+    <div className="error-page">
+      <div className="error-content">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>The page you are looking for doesn't exist or has been moved.</p>
+        <Link to="/" className="back-btn">
+          Back to Home
+        </Link>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
+export default Error;

@@ -1,0 +1,250 @@
+/* File: src/index.css - Updated Color Scheme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Override Tailwind classes from previous design */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.max-w-6xl, .max-w-4xl, .max-w-2xl {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-4, .px-6, .px-8 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-12, .py-16 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.mt-4, .mt-6, .mt-8 {
+  margin-top: 1rem;
+}
+
+.mb-4, .mb-6, .mb-8, .mb-12, .mb-16 {
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lg\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4, .gap-8 {
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-xl, .text-2xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.relative {
+  position: relative;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-md, .shadow-lg, .shadow-xl {
+  box-shadow: 0 10px 30px rgba(82, 113, 255, 0.1);
+}
+
+.transform {
+  transform: translateZ(0);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-20, .h-20, .w-40, .h-40, .w-48, .h-48 {
+  width: auto;
+  height: auto;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.p-4, .p-6 {
+  padding: 1rem;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.bg-\[\#cad2c5\] {
+  background-color: var(--light-bg);
+}
+
+.bg-\[\#b592a0\] {
+  background-color: var(--primary-color);
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--light-bg), white);
+}
+
+.from-\[\#cad2c5\] {
+  --tw-gradient-from: var(--light-bg);
+}
+
+.to-white {
+  --tw-gradient-to: white;
+}
+
+.text-gray-800 {
+  color: var(--text-color);
+}
+
+.text-gray-600 {
+  color: var(--light-text);
+}
+
+.leading-relaxed {
+  line-height: 1.7;
+}
+
+/* Override all previous color values */
+.text-french-500,
+.text-lapis-500,
+.hover\:text-lapis-500:hover {
+  color: var(--primary-color) !important;
+}
+
+.bg-french-500,
+.bg-lapis-500 {
+  background-color: var(--primary-color) !important;
+}
+
+.border-french-500,
+.border-lapis-500 {
+  border-color: var(--primary-color) !important;
+}
+
+/* For the navigation */
+.bg-\[\#EAF1E4\] {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Any remaining legacy classes */
+.hover\:bg-opacity-90:hover {
+  opacity: 0.9;
+}
+
+.transition-all.duration-300 {
+  transition: all 0.3s ease;
+}
+
+.shadow-md {
+  box-shadow: var(--shadow);
+}
+
+/* Special case for Footer */
+.bg-rgba-181-146-160-0-1 {
+  background-color: rgba(82, 113, 255, 0.1) !important;
+}
+
+.backdrop-filter-blur-5px {
+  backdrop-filter: blur(5px);
+}
